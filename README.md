@@ -8,6 +8,7 @@ This repository aims at providing the tools necesary to create a LoRaWAN Gateway
 * Raspberry Pi 3.0 with SD Card (> 8GB) (if chirpstack-gateway-bridge at the gateway side)
 * PyGate avec PoE (if powered / Ethernet conection)
 * WiPy, LoPy4 or GPy (tested with LoPy4)
+* LoRa Antenna
 
 ## Software Requirements
 
@@ -24,21 +25,27 @@ For the former, we shall follow the first XXX steps, and for the latter all the 
 
 To update the firmware we need to install the Firmware Updater Tool : 
 
-1. Download and install from : [Pycom](https://software.pycom.io/downloads/linux-1.16.5.html) 
+1.1. Download and install from : [Pycom](https://software.pycom.io/downloads/linux-1.16.5.html) 
 
-2. Insert the module (WiPy / LoPy4 / GPy) and the PoE Ethernet into the Pygate
+1.2. Insert the module (WiPy / LoPy4 / GPy) and the PoE Ethernet into the Pygate
 
-2. Conect the antenna to the Pygate (make sure there is nothig attached to the module)
+1.3. Attach the antenna to the Pygate (make sure there is nothig attached to the module)
 
-3. Run the Firmware tool with ` pycom-fwtool ` on a linux terminal with the pygate connected through USB 
+1.4. Run the Firmware tool with ` pycom-fwtool ` on a linux terminal with the pygate connected through USB 
 
-4. Select the corresponding port, usually ` ttyACM0 `
+1.5. Select the corresponding port, usually ` ttyACM0 `
 
-5. Select on type ` pygate ` and make sure ot to select the Pybytes options
+1.6. Select on type ` pygate ` and make sure ot to select the Pybytes options
 
-6. If everithing goes we are good to go.
+1.7. If everithing goes we are good to go.
 
-### 2. Creating new project on Pymakr
+### 2. Create a ` config.json ` file as the one in this repository
+
+2.1 Modify: 
+
+2.1.1. ` "gateway_ID": "XXXXXXXXXXXXXXXX" ` put the GW identifier 
+
+2.1.2. ` "server_address": "outils.plido.net", ` put the corresponding domain or ip of the network server, or `localhost` if the chirpstack-gateway-bridge is installed in the raspberry pi.
 
 
 
