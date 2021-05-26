@@ -31,7 +31,7 @@ To update the firmware we need to install the Firmware Updater Tool :
 
 1.3. Attach the antenna to the Pygate (make sure there is nothig attached to the module)
 
-1.4. Run the Firmware tool with ` pycom-fwtool ` on a linux terminal with the pygate connected through USB 
+1.4. Run the Firmware tool with ` pycom-fwtool ` on a linux terminal with the pygate connected through an USB type C 
 
 1.5. Select the corresponding port, usually ` ttyACM0 `
 
@@ -65,4 +65,10 @@ To update the firmware we need to install the Firmware Updater Tool :
 
 ### 4. Configure and send LoRaWAN packets on a pycom End Device.
 
-4.1 Simply get the join-plido.py and put it into a pycom lopy module from `https://github.com/MarinoMtz/Roaming-ED`
+4.1 Simply get the `join-plido.py` and put it into a pycom lopy module + extension board from `https://github.com/MarinoMtz/Roaming-ED`
+
+### 5. Install the chirpstack gateway bridge on a Raspberry Pi.
+
+In order add more capabilities at the gateway side, another way to connect our pygate to the chirpstack stack, is to use a Raspberry pi and to create an MQTT broker on it. By doing that, we add a control layer that allow us to filter traffic at the gateway level. It is also helpful since it can also be configured to secure the conection with the LNS using TLS
+
+
