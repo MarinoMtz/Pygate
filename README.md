@@ -69,6 +69,6 @@ To update the firmware we need to install the Firmware Updater Tool :
 
 ### 5. Install the chirpstack gateway bridge on a Raspberry Pi.
 
-In order add more capabilities at the gateway side, another way to connect our pygate to the chirpstack stack, is to use a Raspberry pi and to create an MQTT broker on it. By doing that, we add a control layer that allow us to filter traffic at the gateway level. It is also helpful since it can also be configured to secure the conection with the LNS using TLS
+In order to add more capabilities at the gateway side, another way to connect our pygate to the chirpstack stack, is to use a Raspberry pi and to create an MQTT broker on it. By doing that, we add a control layer that allow us to filter traffic at the gateway level. It is also helpful since it can also be configured to secure the conection with the LNS using TLS
 
 
