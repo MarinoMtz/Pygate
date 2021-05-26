@@ -61,7 +61,7 @@ To update the firmware we need to install the Firmware Updater Tool :
 
 3.1.2. For the ethernet conection, uncomment lines 42 to 52.
 
-3.1 Upload `main.py` to the module, if everithing goes ok, our Pygate is ready to send and receive LoRaWAN packets to the network server
+3.1 Upload `main.py` and reboot the module, if everithing goes ok, our Pygate is ready to send and receive LoRaWAN packets to the network server
 
 ### 4. Configure and send LoRaWAN packets on a pycom End Device.
 
