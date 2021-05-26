@@ -43,9 +43,9 @@ To update the firmware we need to install the Firmware Updater Tool :
 
 2.1 Modify: 
 
-2.1.1. ` "gateway_ID": "XXXXXXXXXXXXXXXX" ` put the GW identifier 
+2.1.1. Line 202 : ` "gateway_ID": "XXXXXXXXXXXXXXXX" ` put the GW identifier, you can generate a random ID when adding a new gateway on the chirpstack application server.
 
-2.1.2. ` "server_address": "outils.plido.net", ` put the corresponding domain or ip of the network server, or `localhost` if the chirpstack-gateway-bridge is installed in the raspberry pi.
+2.1.2. Line 203 : ` "server_address": "outils.plido.net", ` put the corresponding domain or IP of the network server, or `localhost` if the chirpstack-gateway-bridge is installed in the raspberry pi.
 
 2.1.3. We could also put multiple servers, the pygate will forward all the messages to each one of the servers.
 
