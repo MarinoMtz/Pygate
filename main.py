@@ -1,5 +1,5 @@
 from network import WLAN
-from network import ETH
+#from network import ETH
 import time
 import socket
 import machine
@@ -29,9 +29,10 @@ machine.callback(trigger = (machine.PYGATE_START_EVT | machine.PYGATE_STOP_EVT |
 
 
 print('Connecting to WiFi...',  end='')
+
 # Connect to a Wifi Network
 wlan = WLAN(mode=WLAN.STA)
-wlan.connect(ssid='Martinez', auth=(WLAN.WPA2, "marino92"))
+wlan.connect(ssid='lora', auth=(WLAN.WPA2, "Marinito"))
 #wlan.connect(ssid='chirppygate', auth=(WLAN.WPA2, "marino92"))
 
 while not wlan.isconnected():
