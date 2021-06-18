@@ -34,8 +34,9 @@ For the former, we shall follow the first 5 steps, and for the latter all the st
 To update the firmware we need to install the Firmware Updater Tool : 
 
 2.1. Download and install from : [Pycom](https://software.pycom.io/downloads/linux-1.16.5.html) 
+      `sudo dpkg -i pycom-fwtool-1.16.5-bionic-amd64.deb`
 
-2.2. Insert the module (WiPy / LoPy4 / GPy) and the PoE Ethernet into the Pygate
+2.2. Insert the module (WiPy / LoPy4 / GPy) and the PoE Ethernet into the Pygate 
 
 2.3. Attach the antenna to the Pygate (make sure there is nothig attached to the module)
 
