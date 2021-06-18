@@ -42,7 +42,7 @@ To update the firmware we need to install the Firmware Updater Tool :
 
 2.4. Run the Firmware tool with ` pycom-fwtool ` on a linux terminal with the pygate connected through an USB type C 
 
-2.5. Select the corresponding port, usually ` ttyACM0 `
+2.5. Select the corresponding port, usually ` ttyACM0 `, you may need to open the ports with `sudo chmod a+rw /dev/ttyACM*`
 
 2.6. Select on type ` pygate ` and make sure not to select the Pybytes options
 
